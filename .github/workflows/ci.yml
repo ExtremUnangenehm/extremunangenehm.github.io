@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  html-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: HTML-Wohlgeformtheit prüfen
+        run: |
+          python3 - <<'EOF'
+          import pathlib, sys
+          from html.parser import HTMLParser
+
+          class Checker(HTMLParser):
+              def __init__(self):
+                  super().__init__(convert_charrefs=True)
+                  self.errors = []
+
+          failed = False
+          for f in pathlib.Path('.').rglob('*.html'):
+              try:
+                  Checker().feed(f.read_text(encoding='utf-8'))
+                  print(f"OK   {f}")
+              except Exception as e:
+                  print(f"FAIL {f}: {e}")
+                  failed = True
+          sys.exit(1 if failed else 0)
+          EOF

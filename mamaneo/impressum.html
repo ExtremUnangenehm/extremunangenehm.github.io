@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum — MamaNeo</title>
+<style>
+  :root {
+    --bg: #fdf6f7; --text: #3a3340; --muted: #7a6f80; --accent: #c48ba6;
+    --card: #ffffff; --border: #eddfe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1d1a20; --text: #ece6ee; --muted: #a99fb0; --accent: #d9a8c0;
+      --card: #262229; --border: #3a3340;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; padding: 2rem 1rem 4rem;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  header { margin-bottom: 2.5rem; }
+  .brand { color: var(--accent); font-weight: 700; letter-spacing: .02em; text-decoration: none; }
+  h1 { font-size: 1.7rem; margin: .4rem 0 .2rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .6rem; color: var(--accent); }
+  p { margin-bottom: .6rem; }
+  a { color: var(--accent); }
+  .fill {
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    border: 1px dashed var(--accent); border-radius: 4px; padding: 0 .35em;
+    font-style: italic;
+  }
+  .hinweis {
+    background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+    border-radius: 6px; padding: .8rem 1rem; margin: 1.2rem 0; font-size: .92rem;
+  }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border);
+           color: var(--muted); font-size: .88rem; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="/mamaneo/">MamaNeo</a>
+  <h1>Impressum</h1>
+</header>
+
+<div class="hinweis"><strong>ENTWURF</strong> — Diese Fassung enthält noch auszufüllende
+Betreiberangaben und ist bis zu deren Ergänzung nicht final.</div>
+
+<h2>Angaben gemäß § 5 DDG</h2>
+<p>
+  <span class="fill">AUSZUFÜLLEN: Name / Firma inkl. Rechtsform</span><br>
+  <span class="fill">AUSZUFÜLLEN: Straße Hausnummer</span><br>
+  <span class="fill">AUSZUFÜLLEN: PLZ Ort</span>
+</p>
+<p>
+  <span class="fill">AUSZUFÜLLEN: ggf. Vertretungsberechtigte</span>
+</p>
+
+<h2>Kontakt</h2>
+<p>
+  Telefon: <span class="fill">AUSZUFÜLLEN</span><br>
+  E-Mail: <span class="fill">AUSZUFÜLLEN</span>
+</p>
+
+<h2>Verantwortlich für den Inhalt</h2>
+<p><span class="fill">AUSZUFÜLLEN: Name, Anschrift wie oben</span></p>
+
+<footer>
+  <a href="/mamaneo/">MamaNeo</a> · <a href="/mamaneo/datenschutz">Datenschutzerklärung</a>
+</footer>
+</main>
+</body>
+</html>

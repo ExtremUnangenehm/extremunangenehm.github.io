@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MamaNeo — Begleiter für Schwangerschaft und Babyzeit</title>
+<style>
+  :root {
+    --bg: #fdf6f7; --text: #3a3340; --muted: #7a6f80; --accent: #c48ba6;
+    --card: #ffffff; --border: #eddfe4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1d1a20; --text: #ece6ee; --muted: #a99fb0; --accent: #d9a8c0;
+      --card: #262229; --border: #3a3340;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; padding: 2rem 1rem 4rem;
+    display: flex; min-height: 100vh; align-items: center; justify-content: center;
+  }
+  main { max-width: 34rem; text-align: center; }
+  h1 { color: var(--accent); font-size: 2.2rem; letter-spacing: .02em; }
+  .claim { color: var(--muted); margin: .6rem 0 2rem; }
+  .links a {
+    display: inline-block; margin: .3rem .5rem; padding: .55rem 1.1rem;
+    border: 1px solid var(--border); border-radius: 999px;
+    background: var(--card); color: var(--text); text-decoration: none;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MamaNeo</h1>
+  <p class="claim">Dein Begleiter durch Schwangerschaft und Babyzeit —
+  Tagebuch, Termine, Namenssuche und mehr. Deine Daten bleiben auf deinem Gerät.</p>
+  <div class="links">
+    <a href="/mamaneo/datenschutz">Datenschutzerklärung</a>
+    <a href="/mamaneo/impressum">Impressum</a>
+  </div>
+  <footer>Bald im Google Play Store.</footer>
+</main>
+</body>
+</html>
